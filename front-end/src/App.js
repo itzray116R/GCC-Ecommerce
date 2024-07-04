@@ -1,7 +1,7 @@
 import './App.css';
 import { Navbar } from './Components/Navbar/Navbar';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import { Shop } from './Pages/Shop';
+import { Home } from './Pages/Home';
 import { ShopCategory } from './Pages/ShopCategory';
 import { Product } from './Pages/Product';
 import { Cart } from './Pages/Cart';
@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>   {/* all pages hosted on the NavBar are accessed through the router */}
         <Navbar/>
         <Routes>
-          <Route path='/' element={<Shop/>}/>   {/* if accessing the path "/", render the Shop component */}
+          <Route path='/' element={<Home/>}/>   {/* if accessing the path "/", render the Home component */}
           <Route path='/shells' element={<ShopCategory category="shells"/>}/>   {/* if accessing any of the paths for shells, */} 
           <Route path='/buttons' element={<ShopCategory category="buttons"/>}/>    {/* buttons, or internals, render the respective */}
           <Route path='/internals' element={<ShopCategory category="internals"/>}/>    {/* ShopCategory page */}

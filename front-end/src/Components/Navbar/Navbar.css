@@ -74,6 +74,6 @@
     background: red;
     color: white;
 }
-link{
-    text-decoration: none;  /* removes underline property from text links */
+a{      /* a is used to style <Link> tags */
+    text-decoration: none;      /* removes the underline that text links have */
 }

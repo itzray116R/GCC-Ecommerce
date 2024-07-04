@@ -6,19 +6,18 @@ import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
 
-    const [menu, setMenu] = useState("shop");   {/* menu state is initially set to shop */}
+    const [menu, setMenu] = useState("home");   {/* menu state is initially set to shop */}
 
   return (
     <div className='navbar'>
         <div className="nav-logo">
-            <img src={logo} alt="" />
-            <p>GCC 4 U</p>
+            <Link to='/'><img onClick={()=>{setMenu("home")}} src={logo} alt="" /></Link>       {/* Menu is set to "home" so red line will not display on other menu items */}
+            <Link to='/'><p onClick={()=>{setMenu("home")}}>GCC 4 U</p></Link>
         </div>
-        <ul className="nav-menu">       {/* creates an unordered list */}
-            <li onClick={()=>{setMenu("shop")}}><Link style={{ textDecoration: 'none' }} to='/'>Shop</Link>{menu==="shop"?<hr />:<></>}</li>       {/* upon clicking a list item, (e.g. Buttons), the state */}
-            <li onClick={()=>{setMenu("shells")}}><Link style={{ textDecoration: 'none' }} to='/shells'>Shells</Link>{menu==="shells"?<hr />:<></>}</li>       {/* the state will be changed to "buttons". Using the ternary */} 
-            <li onClick={()=>{setMenu("buttons")}}><Link style={{ textDecoration: 'none' }} to='/buttons'>Buttons</Link>{menu==="buttons"?<hr />:<></>}</li>       {/* operator, the horizontal line and its properties will */}
-            <li onClick={()=>{setMenu("internals")}}><Link style={{ textDecoration: 'none' }} to='/internals'>Internals</Link>{menu==="internals"?<hr />:<></>}</li>    {/* only display if the state is of that button */}
+        <ul className="nav-menu">       {/* creates an unordered list. Upon clicking a list item, (e.g. Buttons), the state */}
+            <Link to='/shells'><li onClick={()=>{setMenu("shells")}}>Shells{menu==="shells"?<hr />:<></>}</li></Link>       {/* the state will be changed to "buttons". Using the ternary */} 
+            <Link to='/buttons'><li onClick={()=>{setMenu("buttons")}}>Buttons{menu==="buttons"?<hr />:<></>}</li></Link>       {/* operator. The horizontal line and its properties will */}
+            <Link to='/internals'><li onClick={()=>{setMenu("internals")}}>Internals{menu==="internals"?<hr />:<></>}</li></Link>    {/* only display if the state is of that button */}
         </ul>   {/* the Link tag sets the path depending on which page you click, for the App.js Router component to decide which page to render */}
         <div className="nav-login-cart">    {/* container for login button and cart */}
             <Link to='/login'><button>Login</button></Link>
