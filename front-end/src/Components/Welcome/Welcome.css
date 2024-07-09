@@ -1,0 +1,24 @@
+.welcome{
+    height: 100vh;
+    background: linear-gradient(to bottom, #fde1ff, #e1ffea22 60%);    /* gradient with 180 degree rotation, 2 color codes, and 60% visibility */
+    display: flex;   /* 0 degrees directs the gradient to top, 180 directs it to bottom */
+}
+.welcome-left{
+    flex: 1;                    /* shorthand for  flex: 1 1 0, which means that these items will grow and shrink according to window size */
+    display: flex;
+    flex-direction: column;     /* arrange all the text in a column */
+    justify-content: center;    /* centers content */
+    gap: 20px;                  /* adds gap of 20px between items */
+    padding: 180px;             /* offsets content by 180px on the left */
+    line-height: 1.1;           /* line spacing for text */
+}
+.welcome-left h2{
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+.welcome-left p{
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
