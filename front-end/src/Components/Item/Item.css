@@ -1,0 +1,21 @@
+.item{
+    width: 350px;
+}
+.item p{
+    margin: 6px 0px;
+}
+.item-price{
+    display: flex;
+    gap: 20px;
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+.item:hover{
+    transform: scale(1.05);     /* increase the size of the item by x1.05 when hovering with mouse */
+    transition: 0.3s;
+}
+.item:not(:hover){      /* when not hovering, transform back to regular scale */
+    transform: scale(1);
+    transition: 0.3s;
+}

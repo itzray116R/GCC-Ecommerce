@@ -9,7 +9,7 @@
     flex-direction: column;     /* arrange all the text in a column */
     justify-content: center;    /* centers content */
     gap: 20px;                  /* adds gap of 20px between items */
-    padding: 180px;             /* offsets content by 180px on the left */
+    padding-left: 180px;        /* offsets content by 180px on the left */
     line-height: 1.1;           /* line spacing for text */
 }
 .welcome-left h2{
@@ -21,4 +21,10 @@
     color: #171717;
     font-size: 100px;
     font-weight: 700;
+}
+.welcome-right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
