@@ -1,8 +1,18 @@
 .item{
     width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item img{
+    border-radius: 20px;
+    height: 134px;
+    width: 130px;
 }
 .item p{
     margin: 6px 0px;
+    align-items: start;
 }
 .item-price{
     display: flex;
@@ -12,7 +22,8 @@
     font-weight: 600;
 }
 .item:hover{
-    transform: scale(1.05);     /* increase the size of the item by x1.05 when hovering with mouse */
+    cursor: pointer;
+    transform: scale(1.15);     /* increase the size of the item by x1.05 when hovering with mouse */
     transition: 0.3s;
 }
 .item:not(:hover){      /* when not hovering, transform back to regular scale */

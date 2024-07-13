@@ -1,7 +1,5 @@
 import React from 'react'
 import './Welcome.css'
-import arrow_icon from '../Assets/arrow.png'
-import shell_image from '../Assets/shell.png'
 import gcc from '../Assets/gcc.png'
 
 export const Welcome = () => {

@@ -1,28 +1,37 @@
-.home-shells{
+.home-buttons{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     gap: 10px;
-    height: 80vh;
+    height: 50vh;
 }
-.home-shells h1{
+.home-buttons h1{
     color: #171717;
     font-size: 50px;
     font-weight: 600;
 }
-.home-shells hr{
-    width: 200px;
+.home-buttons hr{
+    width: 220px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
 }
-.home-shells-item{
-    width: 90vw;
-    margin-top: 50px;
+.home-buttons-left{
     display: flex;
-    justify-content: space-around;  /* makes the items fill the space */
+    flex-direction: column;
 }
-.home-shells-btn{
+.home-buttons-middle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-buttons-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-buttons-btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,10 +43,7 @@
     background: #ff4141;
     color: white;
 }
-.home-shells-btn p{
-    font-size: large;
-}
-.home-shells-btn:hover{
+.home-buttons-btn:hover{
     cursor: pointer;
     background: #cf1a1a;
 }

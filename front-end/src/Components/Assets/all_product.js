@@ -1,23 +1,23 @@
-import p1_img from "./product_1.png";
-import p2_img from "./product_2.png";
-import p3_img from "./product_3.png";
-import p4_img from "./product_4.png";
-import p5_img from "./product_5.png";
-import p6_img from "./product_6.png";
-import p7_img from "./product_7.png";
-import p8_img from "./product_8.png";
-import p9_img from "./product_9.png";
-import p10_img from "./product_10.png";
-import p11_img from "./product_11.png";
-import p12_img from "./product_12.png";
-import p13_img from "./product_13.png";
-import p14_img from "./product_14.png";
-import p15_img from "./product_15.png";
-import p16_img from "./product_16.png";
-import p17_img from "./product_17.png";
-import p18_img from "./product_18.png";
-import p19_img from "./product_19.png";
-import p20_img from "./product_20.png";
+import p1_img from "./gcc_black.png";
+import p2_img from "./gcc_indigo.png";
+import p3_img from "./gcc_platinum.png";
+import p4_img from "./gcc_orange.png";
+import p5_img from "./gcc_blue.png";
+import p6_img from "./gcc_white.png";
+import p7_img from "./gcc_clear.png";
+import p8_img from "./gcc_mario.png";
+import p9_img from "./gcc_luigi.png";
+import p10_img from "./gcc_wario.png";
+import p11_img from "./buttons_red+orange.webp";
+import p12_img from "./buttons_blue+green.webp";
+import p13_img from "./buttons_turquoise.webp";
+import p14_img from "./buttons_blue_floral.webp";
+import p15_img from "./buttons_black+white.webp";
+import p16_img from "./buttons_orange+white.webp";
+import p17_img from "./buttons_yellow.webp";
+import p18_img from "./buttons_assorted_colors.webp";
+import p19_img from "./buttons_brown.webp";
+import p20_img from "./buttons_iridescent.webp";
 import p21_img from "./product_21.png";
 import p22_img from "./product_22.png";
 import p23_img from "./product_23.png";
@@ -38,163 +38,123 @@ import p36_img from "./product_36.png";
 let all_product = [
   {
     id: 1,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Black GameCube Controller",
     image: p1_img,
-    new_price: 50.0,
-    old_price: 80.5,
+    price: 59.99,
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Indigo GameCube Controller",
     image: p2_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 3,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Platinum GameCube Controller",
     image: p3_img,
-    new_price: 60.0,
-    old_price: 100.5,
+    price: 59.99,
   },
   {
     id: 4,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Orange GameCube Controller",
     image: p4_img,
-    new_price: 100.0,
-    old_price: 150.0,
+    price: 59.99,
   },
   {
     id: 5,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Blue GameCube Controller",
     image: p5_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 6,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "White GameCube Controller",
     image: p6_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 7,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Clear GameCube Controller",
     image: p7_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Mario GameCube Controller",
     image: p8_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 9,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Luigi GameCube Controller",
     image: p9_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 10,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Wario GameCube Controller",
     image: p10_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 59.99,
   },
   {
     id: 11,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Clear Red & Orange (Bald)",
     image: p11_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    category: "women",
+    name: "Clear Blue & Green (Bald)",
     image: p12_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 13,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Clear Turquoise (Bald)",
     image: p13_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Blue Floral",
     image: p14_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Black & White",
     image: p15_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 16,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Orange & White",
     image: p16_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Yellow (Bald)",
     image: p17_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 18,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Assorted Colors",
     image: p18_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 19,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Brown (Bald)",
     image: p19_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 20,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Iridescent",
     image: p20_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 29.99,
   },
   {
     id: 21,

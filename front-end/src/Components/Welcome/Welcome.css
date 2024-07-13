@@ -1,6 +1,6 @@
 .welcome{
     height: 100vh;
-    background: linear-gradient(to bottom, #fde1ff, #e1ffea22 60%);    /* gradient with 180 degree rotation, 2 color codes, and 60% visibility */
+    background: linear-gradient(to bottom, #ff4141, #e1ffea22 60%);    /* gradient with 180 degree rotation, 2 color codes, and 60% visibility */
     display: flex;   /* 0 degrees directs the gradient to top, 180 directs it to bottom */
 }
 .welcome-left{
