@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 80vh;
+    margin-bottom: 5%;
 }
 .home-shells h1{
     color: #171717;
@@ -20,7 +20,7 @@
     width: 90vw;
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;  /* makes the items fill the space */
+    justify-content: space-around;
 }
 .home-shells-btn{
     display: flex;

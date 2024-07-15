@@ -3,21 +3,22 @@ import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 export const Navbar = () => {
 
-    const [menu, setMenu] = useState("home");   {/* menu state is initially set to shop */}
+    let location = useLocation();
 
   return (
     <div className='navbar'>
         <div className="nav-logo">
-            <Link to='/'><img onClick={()=>{setMenu("home")}} src={logo} alt="" /></Link>       {/* Menu is set to "home" so red line will not display on other menu items */}
-            <Link to='/'><p onClick={()=>{setMenu("home")}}>GCC 4 U</p></Link>
+            <Link to='/'><img src={logo} alt="" /></Link>       {/* clicking the logo or the text will set the path to home */}
+            <Link to='/'><p>GCC 4 U</p></Link>
         </div>
-        <ul className="nav-menu">       {/* creates an unordered list. Upon clicking a list item, (e.g. Buttons), the state */}
-            <Link to='/shells'><li onClick={()=>{setMenu("shells")}}>Shells{menu==="shells"?<hr />:<></>}</li></Link>       {/* the state will be changed to "buttons". Using the ternary */} 
-            <Link to='/buttons'><li onClick={()=>{setMenu("buttons")}}>Buttons{menu==="buttons"?<hr />:<></>}</li></Link>       {/* operator. The horizontal line and its properties will */}
-            <Link to='/internals'><li onClick={()=>{setMenu("internals")}}>Internals{menu==="internals"?<hr />:<></>}</li></Link>    {/* only display if the state is of that button */}
+        <ul className="nav-menu">       {/* creates an unordered list. Upon clicking a list item, (e.g. Buttons), the path */}
+            <Link to='/shells'><li>Shells{location.pathname=='/shells'?<hr />:<></>}</li></Link>       {/* will be changed to '/buttons'. Using the ternary operator. The horizontal*/} 
+            <Link to='/buttons'><li>Buttons{location.pathname=='/buttons'?<hr />:<></>}</li></Link>       {/* line and its properties will only display if the path is of that page, */}
+            <Link to='/internals'><li>Internals{location.pathname=='/internals'?<hr />:<></>}</li></Link>    {/* letting this work with the "See more" buttons on the home page */}
         </ul>   {/* the Link tag sets the path depending on which page you click, for the App.js Router component to decide which page to render */}
         <div className="nav-login-cart">    {/* container for login button and cart */}
             <Link to='/login'><button>Login</button></Link>

@@ -18,11 +18,11 @@ import p17_img from "./buttons_yellow.webp";
 import p18_img from "./buttons_assorted_colors.webp";
 import p19_img from "./buttons_brown.webp";
 import p20_img from "./buttons_iridescent.webp";
-import p21_img from "./product_21.png";
-import p22_img from "./product_22.png";
-import p23_img from "./product_23.png";
-import p24_img from "./product_24.png";
-import p25_img from "./product_25.png";
+import p21_img from "./phob_v2.0.5.png";
+import p22_img from "./trigger_plugs_short.png";
+import p23_img from "./trigger_plugs_tall.png";
+import p24_img from "./tri_wing_screwdriver.png";
+import p25_img from "./tactile_z.png";
 import p26_img from "./product_26.png";
 import p27_img from "./product_27.png";
 import p28_img from "./product_28.png";
@@ -158,43 +158,33 @@ let all_product = [
   },
   {
     id: 21,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "PhobGCC v2.0.5 Motherboard",
     image: p21_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 19.99,
   },
   {
     id: 22,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Trigger Plugs (Short)",
     image: p22_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 6.99,
   },
   {
     id: 23,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Trigger Plugs (Tall)",
     image: p23_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 6.99,
   },
   {
     id: 24,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
-    category: "men",
+    name: "Tri Wing Screwdriver",
     image: p24_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 12.99,
   },
   {
     id: 25,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
-    category: "kid",
+    name: "Tactile Z Button Switch",
     image: p25_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    price: 5.99,
   },
   {
     id: 26,
