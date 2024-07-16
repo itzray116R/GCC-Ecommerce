@@ -1,0 +1,43 @@
+.home-shells{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5%;
+}
+.home-shells h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.home-shells hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.home-shells-item{
+    width: 90vw;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.home-shells-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 75px;
+    margin-top: 20px;
+    background: #ff4141;
+    color: white;
+}
+.home-shells-btn p{
+    font-size: large;
+}
+.home-shells-btn:hover{
+    cursor: pointer;
+    background: #cf1a1a;
+}

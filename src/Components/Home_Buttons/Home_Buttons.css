@@ -1,0 +1,52 @@
+.home-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.home-buttons h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.home-buttons hr{
+    width: 220px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.home-buttons-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-buttons-middle{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.home-buttons-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.home-buttons-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 220px;
+    height: 50px;
+    border-radius: 75px;
+    margin-top: 20px;
+    background: #ff4141;
+    color: white;
+}
+.home-buttons-btn:hover{
+    cursor: pointer;
+    background: #cf1a1a;
+}
